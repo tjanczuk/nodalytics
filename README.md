@@ -1,6 +1,6 @@
 Analytics for Node.js HTTP APIs
 ==========
-[Tweet](https://twitter.com/home?status=Google%20Analytics%20for%20Node.js%20HTTP%20APIs%20http://github.com/tjanczuk/nodalytics%20via%20@tjanczuk%20%23nodejs%20%23webapi%20%23http) | [Google+](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics) | [Facebook](https://www.facebook.com/sharer/sharer.php?u=http://github.com/tjanczuk/nodalytics)
+[Tweet](https://twitter.com/home?status=Google%20Analytics%20for%20Node.js%20HTTP%20APIs%20http://github.com/tjanczuk/nodalytics%20via%20@tjanczuk%20%23nodejs%20%23webapi%20%23http) | [Google+](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics) | [Facebook](https://www.facebook.com/sharer/sharer.php?u=http://github.com/tjanczuk/nodalytics) | [Follow @tjanczuk](https://twitter.com/intent/user?screen_name=tjanczuk)
 
 *Nodalytics* hooks up Google Analytics to your server side HTTP APIs in Node.js. With one line of code you can capture and analyze statistical information about HTTP calls being made to your HTTP service: 
 
@@ -71,7 +71,7 @@ app.use(express.session());
 app.use(nodalytics('UA-44126622-6'));
 ```
 
-Note that this mechanism relies on cookies and as such is only as good as your client's intentions of preserving them. A much better mechanism of tracking new and repeated customers would rely on client authentication - see the section on customization below. 
+Note that this mechanism relies on HTTP cookies and is therefore only as good as your client's intentions of preserving them. A better mechanism of tracking new and repeated customers would rely on client authentication - see the section on customization below. 
 
 ### Customization
 
@@ -113,4 +113,4 @@ The `map` handler above is a good place to customize your notion of caller ident
 
 ## Like it? Share it.
 
-[Tweet](https://twitter.com/home?status=Google%20Analytics%20for%20Node.js%20HTTP%20APIs%20http://github.com/tjanczuk/nodalytics%20via%20@tjanczuk%20%23nodejs%20%23webapi%20%23http) | [Google+](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics) | [Facebook](https://www.facebook.com/sharer/sharer.php?u=http://github.com/tjanczuk/nodalytics)
+[Tweet](https://twitter.com/home?status=Google%20Analytics%20for%20Node.js%20HTTP%20APIs%20http://github.com/tjanczuk/nodalytics%20via%20@tjanczuk%20%23nodejs%20%23webapi%20%23http) | [Google+](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics) | [Facebook](https://www.facebook.com/sharer/sharer.php?u=http://github.com/tjanczuk/nodalytics) | [Follow @tjanczuk](https://twitter.com/intent/user?screen_name=tjanczuk)
