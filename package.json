@@ -5,7 +5,7 @@
     "url": "http://tomasz.janczuk.org",
     "twitter": "tjanczuk"
   },
-  "version": "0.1.0-pre",
+  "version": "1.0.0",
   "description": "Google Analytics for Node.js HTTP APIs",
   "tags" : ["google", "analytics", "node.js", "http", "server", "web", "api"],
   "main": "./lib/nodalytics.js",
