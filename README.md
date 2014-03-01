@@ -1,6 +1,6 @@
 Analytics for Node.js HTTP APIs
 ==========
-[Tweet](https://twitter.com/home?status=Google%20Analytics%20for%20Node.js%20HTTP%20APIs%20http://github.com/tjanczuk/nodalytics%20via%20@tjanczuk%20%23nodejs%20%23webapi%20%23http) [Google Plus](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics) [Facebook](https://www.facebook.com/sharer/sharer.php?u=http://github.com/tjanczuk/nodalytics)
+[Tweet](https://twitter.com/home?status=Google%20Analytics%20for%20Node.js%20HTTP%20APIs%20http://github.com/tjanczuk/nodalytics%20via%20@tjanczuk%20%23nodejs%20%23webapi%20%23http) | [Google+](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics) | [Facebook](https://www.facebook.com/sharer/sharer.php?u=http://github.com/tjanczuk/nodalytics)
 
 *Nodalytics* hooks up Google Analytics to your server side HTTP APIs in Node.js. With one line of code you can capture and analyze statistical information about HTTP calls being made to your HTTP service: 
 
@@ -11,11 +11,11 @@ Analytics for Node.js HTTP APIs
 * Where are the calls originating from?
 * How many new and repeated callers do you have?
 
-The *nodalytics* module uses [Google Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1/) to communicate directly with Google Analytics from your server. Unlike with Google Analytics for web sites or mobile applications, this is useful when you wither can't or don't want to control the client side code.
+The *nodalytics* module uses [Google Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1/) to communicate directly with Google Analytics from your server. Unlike with Google Analytics for web sites or mobile applications, this is useful when you can't or don't want to control the client side code.
 
-## Getting started
+### Getting started
 
-First, create a Google Analytics account and a property under this account you will use to track calls to your HTTP APIs. When asked about the type of the property (*web* or *mobile*), choose *web*. Your property will be assigned a property ID, for example `UA-44126622-6`. 
+First, create a Google Analytics account and a property under this account that you will use to track calls to your HTTP APIs. When asked about the type of the property (*web* or *mobile*), choose *web*. Your property will be assigned a property ID, for example `UA-44126622-6`. 
 
 Install the *nodalytics* module from NPM:
 
@@ -51,7 +51,7 @@ curl http://localhost:3000/baz -d somedata
 
 You should see the Google Analytics events showing up in real time in the dashboard (two for HTTP GET and one for HTTP POST). 
 
-## Analytics for URL path, query string, and HTTP verb 
+### Analytics for URL path, query string, and HTTP verb 
 
 For analytics purposes, HTTP calls made to your service are mapped to the concepts of Google Analytics Events as follows:
 
@@ -61,7 +61,7 @@ For analytics purposes, HTTP calls made to your service are mapped to the concep
 
 Using the Google Analytics Dashboard, you can slice and pivot the collected data in a number of ways. 
 
-## Analytics for new and repeated callers
+### Analytics for new and repeated callers
 
 In addition to the basic HTTP path/verb/query information, *nodalytics* also supports tracking information about new and repeated callers (new and returning visitors in web site lingo). To use this feature, your service must be built with a first class notion of a unique caller. By default, Express.js session id is used to identify repeated callers. As such, to track new and repeated callers, you must enable session support in your express application:
 
@@ -73,7 +73,7 @@ app.use(nodalytics('UA-44126622-6'));
 
 Note that this mechanism relies on cookies and as such is only as good as your client's intentions of preserving them. A much better mechanism of tracking new and repeated customers would rely on client authentication - see the section on customization below. 
 
-## Customization
+### Customization
 
 The connect middleware that *nodalytics* provides can be customized as follows (each property except *propopert_id* is optional):
 
@@ -109,8 +109,10 @@ app.use(nodalytics({
 
 For reference of Google Analytics Event parameters see [here](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters).
 
+The `map` handler above is a good place to customize your notion of caller identity for the purpose of tracking new and repeated callers. Set a string uniquely identifying your caller to the `event.cid` property. For example, this can be a username or a public key token representing the caller of your API. 
+
 ## Like it? Share it.
 
 [Tweet](https://twitter.com/home?status=Google%20Analytics%20for%20Node.js%20HTTP%20APIs%20http://github.com/tjanczuk/nodalytics%20via%20@tjanczuk%20%23nodejs%20%23webapi%20%23http)
-[Google Plus](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics)
+[Google+](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics)
 [Facebook](https://www.facebook.com/sharer/sharer.php?u=http://github.com/tjanczuk/nodalytics)
