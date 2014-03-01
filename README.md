@@ -15,7 +15,7 @@ The *nodalytics* module uses [Google Measurement Protocol](https://developers.go
 
 ### Getting started
 
-First, create a Google Analytics account and a property under this account that you will use to track calls to your HTTP APIs. When asked about the type of the property (*web* or *mobile*), choose *web*. Your property will be assigned a property ID, for example `UA-44126622-6`. 
+First, [create a Google Analytics account](http://www.google.com/analytics/) and a property under this account that you will use to track calls to your HTTP APIs. When asked about the type of the property (*web* or *mobile*), choose *web*. Your property will be assigned a property ID, for example `UA-44126622-6`. 
 
 Install the *nodalytics* module from NPM:
 
@@ -113,6 +113,4 @@ The `map` handler above is a good place to customize your notion of caller ident
 
 ## Like it? Share it.
 
-[Tweet](https://twitter.com/home?status=Google%20Analytics%20for%20Node.js%20HTTP%20APIs%20http://github.com/tjanczuk/nodalytics%20via%20@tjanczuk%20%23nodejs%20%23webapi%20%23http)
-[Google+](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics)
-[Facebook](https://www.facebook.com/sharer/sharer.php?u=http://github.com/tjanczuk/nodalytics)
+[Tweet](https://twitter.com/home?status=Google%20Analytics%20for%20Node.js%20HTTP%20APIs%20http://github.com/tjanczuk/nodalytics%20via%20@tjanczuk%20%23nodejs%20%23webapi%20%23http) | [Google+](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics) | [Facebook](https://www.facebook.com/sharer/sharer.php?u=http://github.com/tjanczuk/nodalytics)
