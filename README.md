@@ -111,6 +111,6 @@ For reference of Google Analytics Event parameters see [here](https://developers
 
 The `map` handler above is a good place to customize your notion of caller identity for the purpose of tracking new and repeated callers. Set a string uniquely identifying your caller to the `event.cid` property. For example, this can be a username or a public key token representing the caller of your API. 
 
-## Like it? Share it.
+### Like it? Share it.
 
 [Tweet](https://twitter.com/home?status=Google%20Analytics%20for%20Node.js%20HTTP%20APIs%20http://github.com/tjanczuk/nodalytics%20via%20@tjanczuk%20%23nodejs%20%23webapi%20%23http) | [Google+](https://plus.google.com/share?url=http://github.com/tjanczuk/nodalytics) | [Facebook](https://www.facebook.com/sharer/sharer.php?u=http://github.com/tjanczuk/nodalytics) | [Follow @tjanczuk](https://twitter.com/intent/user?screen_name=tjanczuk)
